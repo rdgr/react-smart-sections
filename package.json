@@ -5,5 +5,12 @@
   "repository": "git@github.com:netguru/react-smart-sections.git",
   "author": "Maciej Myśliński <hello@maciejmyslinski.com> (https://maciejmyslinski.com)",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "smart-sections": "../smart-sections"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1"
+  }
 }
