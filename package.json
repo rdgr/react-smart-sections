@@ -1,0 +1,15 @@
+{
+  "name": "react-smart-sections",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": "git@github.com:netguru/react-smart-sections.git",
+  "author": "Maciej Myśliński <hello@maciejmyslinski.com> (https://maciejmyslinski.com)",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^15.3.0 || ^16.0.0-0",
+    "smart-sections": "^0.0.1"
+  }
+}
