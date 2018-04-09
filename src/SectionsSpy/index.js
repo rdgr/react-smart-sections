@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { spy } from 'smart-sections';
 
-export class ScrollSpy extends Component {
+export class SectionsSpy extends Component {
   static propTypes = {
     render: PropTypes.func.isRequired
   };

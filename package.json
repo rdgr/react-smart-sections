@@ -6,11 +6,10 @@
   "author": "Maciej Myśliński <hello@maciejmyslinski.com> (https://maciejmyslinski.com)",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "smart-sections": "../smart-sections"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "prop-types": "^15.6.1",
-    "react": "^16.3.1"
+    "react": "^15.3.0 || ^16.0.0-0",
+    "smart-sections": "^0.0.1"
   }
 }
