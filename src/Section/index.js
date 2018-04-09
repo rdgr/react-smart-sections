@@ -32,6 +32,10 @@ export class Section extends Component {
     if (typeof render === 'function') {
       return render({ children, handleRef });
     }
-    return <div ref={handleRef}>{children}</div>;
+    return (
+      <div {...restProps} ref={handleRef}>
+        {children}
+      </div>
+    );
   }
 }
