@@ -33,6 +33,7 @@
     "rollup-plugin-peer-deps-external": "^2.1.0"
   },
   "scripts": {
-    "start": "nps"
+    "start": "nps",
+    "prepublish": "yarn start build"
   }
 }
