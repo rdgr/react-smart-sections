@@ -1,7 +1,12 @@
 {
   "name": "react-smart-sections",
   "version": "0.0.1",
-  "main": "src/index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.es.js",
+  "jsnext:main": "dist/bundle.es.js",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:netguru/react-smart-sections.git",
   "author": "Maciej Myśliński <hello@maciejmyslinski.com> (https://maciejmyslinski.com)",
   "license": "MIT",
@@ -11,5 +16,23 @@
     "prop-types": "^15.6.1",
     "react": "^15.3.0 || ^16.0.0-0",
     "smart-sections": "^0.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nps": "^5.9.0",
+    "nps-utils": "^1.5.0",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-peer-deps-external": "^2.1.0"
+  },
+  "scripts": {
+    "start": "nps"
   }
 }
