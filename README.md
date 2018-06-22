@@ -5,11 +5,11 @@ Vertical scroll solution that follows what you actually read
 ## Installation
 
 ```
-yarn add react-smart-sections
+yarn add react-smart-sections smart-sections
 ```
 
 ```
-npm install --save react-smart-sections
+npm install --save react-smart-sections smart-sections
 ```
 
 ## Documentation
