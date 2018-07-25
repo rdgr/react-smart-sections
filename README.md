@@ -12,6 +12,9 @@ yarn add react-smart-sections smart-sections
 npm install --save react-smart-sections smart-sections
 ```
 
+## [Live demo](https://codesandbox.io/s/13w0kojlv3)
+
+
 ## Documentation
 
 ```jsx
