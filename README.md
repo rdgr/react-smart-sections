@@ -17,11 +17,10 @@ npm install --save react-smart-sections smart-sections
 ## Documentation
 
 ```jsx
-import { Fragment } from 'react';
-import { Section } from 'react-smart-sections';
+import { Scroll, Section } from 'react-smart-sections';
 
 export const Page = () => (
-  <Fragment>
+  <Scroll>
     <Section name="introduction">
       <h1>Introductin</h1>
       <p>By default Section wraps it's content with a div</p>
@@ -45,7 +44,7 @@ export const Page = () => (
         </YourWrapperComponent>
       )}
     />
-  </Fragment>
+  </Scroll>
 );
 ```
 

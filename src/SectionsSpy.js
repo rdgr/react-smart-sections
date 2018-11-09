@@ -1,18 +1,23 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { spy } from 'smart-sections';
+import { Consumer } from './context';
 
 export class SectionsSpy extends Component {
   static propTypes = {
-    render: PropTypes.func.isRequired
+    render: PropTypes.func.isRequired,
   };
 
+  static contextType = Consumer;
+
   state = {
-    sections: []
+    sections: [],
   };
 
   componentDidMount() {
-    this.unregister = spy.registerScrollSpy(this.handleScrollStateChange);
+    // this.unregister = spy.registerScrollSpy(this.handleScrollStateChange);
+    const { handleSectionStateChange: callback, context: containerEl } = this;
+    this.unregister = spy.registerScrollSpy({ callback, containerEl });
   }
 
   componentWillUnmount() {
@@ -24,6 +29,8 @@ export class SectionsSpy extends Component {
   };
 
   render() {
-    return this.props.render(this.state.sections);
+    const { render } = this.props;
+    const { sections } = this.state;
+    return render(sections);
   }
 }
